@@ -30,7 +30,6 @@ def move():
     "Move snake forward one segment."
     head = snake[-1].copy()
     head.move(aim)
-
     if not inside(head) or head in snake:
         square(head.x, head.y, 9, 'red')
         update()
@@ -52,7 +51,10 @@ def move():
 
     square(food.x, food.y, 9, 'green')
     update()
-    ontimer(move, 100)
+    #The snake can be faster if in the ontimeter the second argument is changed
+    #when the number is close to 0 the speed is higher and when it is to far from 0
+    #it goes slower. In this case we changed it fromo 100 to 50, and it clearly goes faster
+    ontimer(move, 50)
 
 setup(420, 420, 370, 0)
 hideturtle()
