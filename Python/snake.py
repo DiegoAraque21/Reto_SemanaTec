@@ -13,9 +13,17 @@ from turtle import *
 from random import randrange
 from freegames import square, vector
 <<<<<<< HEAD
+<<<<<<< HEAD
 import random as rd
 "Change the initial position of food and snake"
 
+=======
+"Library to use randint"
+import random as rd
+
+"Change the initial position of food and snake"
+
+>>>>>>> 4bc52699983ecc8f310bf8f4b4d6a93450d8f1b9
 =======
 "Library to use randint"
 import random as rd
