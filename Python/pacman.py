@@ -18,8 +18,14 @@ state = {'score': 0}
 path = Turtle(visible=False)
 writer = Turtle(visible=False)
 aim = vector(5, 0)
+<<<<<<< HEAD
 #Change in the start position of pacman, it changes the coordinates in which our pacman will appear. From (-40,-80) to (-40,120)
 pacman = vector(-40, 120)
+=======
+pacman = vector(-40, -80)
+#Changes in the number ghost reflected on the board
+#Through coordinates with the vector are the changes LF
+>>>>>>> NumberGhost
 ghosts = [
     [vector(-180, 160), vector(5, 0)],
     [vector(-180, -160), vector(0, 5)],
