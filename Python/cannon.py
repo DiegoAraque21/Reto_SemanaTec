@@ -41,11 +41,11 @@ def draw():
     "Change the size of objetives and the cannon LuisFe"
     for target in targets:
         goto(target.x, target.y)
-        dot(20, 'gold')
+        dot(30, 'gold')
 
     if inside(ball):
         goto(ball.x, ball.y)
-        dot(10, 'cyan')
+        dot(20, 'cyan')
 
     update()
 
