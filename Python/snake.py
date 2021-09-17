@@ -12,35 +12,25 @@ Exercises
 from turtle import *
 from random import randrange
 from freegames import square, vector
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 import random as rd
 "Change the initial position of food and snake"
 
-=======
-"Library to use randint"
->>>>>>> NumberGhost
-import random as rd
-
-"Change the initial position of food and snake"
-
->>>>>>> 4bc52699983ecc8f310bf8f4b4d6a93450d8f1b9
-=======
 "Library to use randint"
 import random as rd
 
 "Change the initial position of food and snake"
 
->>>>>>> 4bc52699983ecc8f310bf8f4b4d6a93450d8f1b9
-=======
 "Library to use randint"
 import random as rd
 
 "Change the initial position of food and snake"
 
->>>>>>> 6679d5f41d1b364b37c78451da3b2f6118ddf253
+"Library to use randint"
+import random as rd
+
+"Change the initial position of food and snake"
+
 a=round(rd.randint(-9,9)*10)
 b=round(rd.randint(-9,9)*10)
 c=round(rd.randint(-9,9)*10)
@@ -94,9 +84,10 @@ setup(420, 420, 370, 0)
 hideturtle()
 tracer(False)
 listen()
-onkey(lambda: change(10, 0), 'Right')
-onkey(lambda: change(-10, 0), 'Left')
-onkey(lambda: change(0, 10), 'Up')
-onkey(lambda: change(0, -10), 'Down')
+"Change control keys form Up, Down, Right and Left to WASD" 
+onkey(lambda: change(10, 0), 'd')
+onkey(lambda: change(-10, 0), 'a')
+onkey(lambda: change(0, 10), 'w')
+onkey(lambda: change(0, -10), 's')
 move()
 done()
