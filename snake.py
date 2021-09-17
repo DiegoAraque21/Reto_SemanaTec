@@ -12,17 +12,9 @@ Exercises
 from turtle import *
 from random import randrange
 from freegames import square, vector
-<<<<<<< HEAD
 import random as rd
 "Change the initial position of food and snake"
 
-=======
-"Library to use randint"
-import random as rd
-
-"Change the initial position of food and snake"
-
->>>>>>> 4bc52699983ecc8f310bf8f4b4d6a93450d8f1b9
 a=round(rd.randint(-9,9)*10)
 b=round(rd.randint(-9,9)*10)
 c=round(rd.randint(-9,9)*10)
