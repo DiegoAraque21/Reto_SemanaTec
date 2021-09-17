@@ -35,11 +35,11 @@ def draw():
 
     for target in targets:
         goto(target.x, target.y)
-        dot(20, 'blue')
+        dot(15, 'blue')
 
     if inside(ball):
         goto(ball.x, ball.y)
-        dot(6, 'red')
+        dot(20, 'red')
 
     update()
 
