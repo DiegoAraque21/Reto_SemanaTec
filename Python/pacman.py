@@ -92,7 +92,7 @@ def valid(point):
 def world():
     "Draw world using path."
     bgcolor('black')
-    path.color('blue')
+    path.color('red') #Change color of the path
 
     for index in range(len(tiles)):
         tile = tiles[index]
@@ -128,7 +128,7 @@ def move():
 
     up()
     goto(pacman.x + 10, pacman.y + 10)
-    dot(20, 'yellow')
+    dot(20, 'green') #Change color of Pacman
 
     for point, course in ghosts:
         if valid(point + course):
@@ -146,7 +146,7 @@ def move():
 
         up()
         goto(point.x + 10, point.y + 10)
-        dot(20, 'red')
+        dot(20, 'gold') #Change color of Ghosts
 
     update()
 
