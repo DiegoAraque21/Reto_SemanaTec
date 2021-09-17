@@ -41,11 +41,11 @@ def draw():
 
     for target in targets:
         goto(target.x, target.y)
-        dot(15, 'green') #change color of targets
+        dot(30, 'green') #change color of targets and the size of the target
 
     if inside(ball):
         goto(ball.x, ball.y)
-        dot(10, 'blue') #change color of cannon ball
+        dot(20, 'blue') #change color of cannon ball and the zise of the ball
 
     update()
 
