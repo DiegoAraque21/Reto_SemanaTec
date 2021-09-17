@@ -2,29 +2,13 @@
 
 Exercises
 
-1. How do you make the snake faster or slower?
-2. How can you make the snake go around the edges?
-3. How would you move the food?
-4. Change the snake to respond to arrow keys.
-
 """
 
 from turtle import *
 from random import randrange
 from freegames import square, vector
 
-import random as rd
-"Change the initial position of food and snake"
 
-"Library to use randint"
-import random as rd
-
-"Change the initial position of food and snake"
-
-"Library to use randint"
-import random as rd
-
-"Change the initial position of food and snake"
 
 "Library to use randint"
 import random as rd
@@ -55,7 +39,7 @@ def move():
     head = snake[-1].copy()
     head.move(aim)
     if not inside(head) or head in snake:
-        square(head.x, head.y, 9, 'red')
+        square(head.x, head.y, 9, 'purple')
         update()
         return
 
@@ -69,11 +53,10 @@ def move():
         snake.pop(0)
 
     clear()
-
     for body in snake:
-        square(body.x, body.y, 9, 'black')
+        square(body.x, body.y, 9, 'green')
 
-    square(food.x, food.y, 9, 'green')
+    square(food.x, food.y, 9, 'red')
     update()
     #The snake can be faster if in the ontimeter the second argument is changed
     #when the number is close to 0 the speed is higher and when it is to far from 0

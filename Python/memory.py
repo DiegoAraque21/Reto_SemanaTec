@@ -18,13 +18,15 @@ car = path('car.gif')
 tiles = list(range(32)) * 2
 state = {'mark': None}
 hide = [True] * 64
+print(tiles)
 
 def square(x, y):
     "Draw white square with black outline at (x, y)."
     up()
     goto(x, y)
     down()
-    color('black', 'white')
+    "Change square color LuisFe"
+    color('red', 'blue')
     begin_fill()
     for count in range(4):
         forward(50)
