@@ -22,18 +22,32 @@ state = {'score': 0}
 path = Turtle(visible=False)
 writer = Turtle(visible=False)
 aim = vector(5, 0)
+<<<<<<< HEAD
 "pacman = vector(-40, -80) ---------->Change where pacman starts"
 "Luis Fe-->3. Change where pacman starts"
 pacman= vector(-40, 120)
 "LuisFe-->2. Change the number of ghosts"
+=======
+#Change in the start position of pacman, it changes the coordinates in which our pacman will appear. From (-40,-80) to (-40,120)
+pacman = vector(-40, 120)
+#Changes in the number ghost reflected on the board
+#Through coordinates with the vector are the changes LF
+>>>>>>> f4fd5a8d476ee5be40f263ad0d37787a9c4b9f3e
 ghosts = [
     [vector(-180, 160), vector(5, 0)],
     [vector(-180, -160), vector(0, 5)],
     [vector(100, 160), vector(0, -5)],
     [vector(100, -160), vector(-5, 0)],
+<<<<<<< HEAD
     [vector(-40, -80), vector(-5, 0)],
     [vector(-30, -80), vector(-5, 0)],
     [vector(-180, 40), vector(-5, 0)],
+=======
+    [vector(100, -60), vector(-5, 0)],
+    [vector(40, -160), vector(-5, 0)],
+    [vector(20, 120), vector(-5, 0)],
+
+>>>>>>> f4fd5a8d476ee5be40f263ad0d37787a9c4b9f3e
 ]
 tiles = [
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
