@@ -17,5 +17,11 @@ We have a python folder tha contains:
 	-  The first change was to make pacman start in a diffeent position. To do that we changed the initial vector values.
 	-  Also we changed the number of ghosts in the game
 	-  The last change was to change the colors of the board and other elements of the game.
-- snake.py: The first change was to make the snake go faster or slower, we also changes the start position of the snake and the food and the last one was to change the keys to move the snake.
-
+- snake.py:
+	-  The first change was to make the snake go faster or slower
+	-  We also changes the start position of the snake and the food
+	-  The last one was to change the keys to move the snake.
+- cannon.py:
+	- The first change was to have a different color for the targets and the cannon ball
+	- The second one was to change the velocity of the cannon ball
+	- The last change was to have bigger sizes for both the target and the cannon ball
