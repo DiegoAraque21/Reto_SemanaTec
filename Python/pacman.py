@@ -2,11 +2,15 @@
 
 Exercises
 
-1. Change the board.
-2. Change the number of ghosts.
-3. Change where pacman starts.
+LuisFe----->1. Change the board.
+LuisFe----->2. Change the number of ghosts.
+LuisFe----->3. Change where pacman starts.
 4. Make the ghosts faster/slower.
 5. Make the ghosts smarter.
+
+Extra
+6.-Change the color of ghosts and pacman. LuisFeeee
+
 
 """
 
@@ -18,12 +22,18 @@ state = {'score': 0}
 path = Turtle(visible=False)
 writer = Turtle(visible=False)
 aim = vector(5, 0)
-pacman = vector(-40, -80)
+"pacman = vector(-40, -80) ---------->Change where pacman starts"
+"Luis Fe-->3. Change where pacman starts"
+pacman= vector(-40, 120)
+"LuisFe-->2. Change the number of ghosts"
 ghosts = [
     [vector(-180, 160), vector(5, 0)],
     [vector(-180, -160), vector(0, 5)],
     [vector(100, 160), vector(0, -5)],
     [vector(100, -160), vector(-5, 0)],
+    [vector(-40, -80), vector(-5, 0)],
+    [vector(-30, -80), vector(-5, 0)],
+    [vector(-180, 40), vector(-5, 0)],
 ]
 tiles = [
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -48,6 +58,7 @@ tiles = [
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 ]
 
+"Cambiando el tablero"
 def square(x, y):
     "Draw square using path at (x, y)."
     path.up()
@@ -84,8 +95,8 @@ def valid(point):
 
 def world():
     "Draw world using path."
-    bgcolor('black')
-    path.color('blue')
+    bgcolor('green')
+    path.color('black')
 
     for index in range(len(tiles)):
         tile = tiles[index]
@@ -98,7 +109,7 @@ def world():
             if tile == 1:
                 path.up()
                 path.goto(x + 10, y + 10)
-                path.dot(2, 'white')
+                path.dot(2, 'blue')
 
 def move():
     "Move pacman and all ghosts."
@@ -121,7 +132,7 @@ def move():
 
     up()
     goto(pacman.x + 10, pacman.y + 10)
-    dot(20, 'yellow')
+    dot(20, 'cyan')
 
     for point, course in ghosts:
         if valid(point + course):
@@ -139,7 +150,7 @@ def move():
 
         up()
         goto(point.x + 10, point.y + 10)
-        dot(20, 'red')
+        dot(20, 'gold')
 
     update()
 

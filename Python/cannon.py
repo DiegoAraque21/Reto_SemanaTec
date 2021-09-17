@@ -7,6 +7,9 @@ Exercises
 3. Apply gravity to the targets.
 4. Change the speed of the ball.
 
+Extra
+Shoots
+
 """
 
 from random import randrange
@@ -16,6 +19,7 @@ from freegames import vector
 ball = vector(-200, -200)
 speed = vector(0, 0)
 targets = []
+contA=0
 
 def tap(x, y):
     "Respond to screen tap."
@@ -32,18 +36,19 @@ def inside(xy):
 def draw():
     "Draw ball and targets."
     clear()
-
+    "Change the size of objetives and the cannon LuisFe"
     for target in targets:
         goto(target.x, target.y)
-        dot(20, 'blue')
+        dot(20, 'gold')
 
     if inside(ball):
         goto(ball.x, ball.y)
-        dot(6, 'red')
+        dot(10, 'cyan')
 
     update()
 
 def move():
+    cont=0
     "Move ball and targets."
     # Generate a new target at random times
     if randrange(40) == 0:
@@ -66,10 +71,11 @@ def move():
 
     # Detect if the bullet hits a target
     for target in dupe:
+        cont=cont+1
         if abs(target - ball) > 13:
             targets.append(target)
-
     draw()
+
 
     # Detect when a target reaches the left side
     for target in targets:
