@@ -2,40 +2,16 @@
 
 Exercises
 
-LuisFe--->1. How do you make the snake faster or slower?
-2. How can you make the snake go around the edges?
-LuisF----->3. How would you move the food?
-LuisF---->4. Change the snake to respond to arrow keys.
-
-Extra
-Change the color of board
-
-
-
 """
 
 from turtle import *
 from random import randrange
 from freegames import square, vector
 
-import random as rd
-<<<<<<< HEAD
-=======
-"Change the initial position of food and snake"
+
 
 "Library to use randint"
 import random as rd
-
-"Change the initial position of food and snake"
-
-"Library to use randint"
-import random as rd
-
-"Change the initial position of food and snake"
-
-"Library to use randint"
-import random as rd
->>>>>>> f4fd5a8d476ee5be40f263ad0d37787a9c4b9f3e
 
 "Change the initial position of food and snake"
 
@@ -82,40 +58,19 @@ def move():
 
     square(food.x, food.y, 9, 'red')
     update()
-<<<<<<< HEAD
-    "Change the speed LuisFe"
-    f=len(snake)
-    if f<10:
-        ontimer(move, 100)
-    else:
-        ontimer(move,50)
-=======
     #The snake can be faster if in the ontimeter the second argument is changed
     #when the number is close to 0 the speed is higher and when it is to far from 0
     #it goes slower. In this case we changed it fromo 100 to 50, and it clearly goes faster
     ontimer(move, 50)
 
->>>>>>> f4fd5a8d476ee5be40f263ad0d37787a9c4b9f3e
 setup(420, 420, 370, 0)
 hideturtle()
 tracer(False)
 listen()
-<<<<<<< HEAD
-"LuisFe 4. Change the snake to respond to arrow keys"
-"Right"
-onkey(lambda: change(10, 0), 'D')
-"Left"
-onkey(lambda: change(-10, 0), 'A')
-"Up"
-onkey(lambda: change(0, 10), 'W')
-"Down"
-onkey(lambda: change(0, -10), 'S')
-=======
 "Change control keys form Up, Down, Right and Left to WASD" 
 onkey(lambda: change(10, 0), 'd')
 onkey(lambda: change(-10, 0), 'a')
 onkey(lambda: change(0, 10), 'w')
 onkey(lambda: change(0, -10), 's')
->>>>>>> f4fd5a8d476ee5be40f263ad0d37787a9c4b9f3e
 move()
 done()
