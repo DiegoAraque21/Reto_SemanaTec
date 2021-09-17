@@ -1,4 +1,4 @@
 # Reto_SemanaTec
 
-## Autores
-Diego Araque
+## Authors
+Diego Araque, Luis Felipe Flores and Josue Rodriguez
