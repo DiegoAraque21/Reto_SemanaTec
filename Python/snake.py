@@ -12,9 +12,17 @@ Exercises
 from turtle import *
 from random import randrange
 from freegames import square, vector
+import random as rd
+"Change the initial position of food and snake"
 
-food = vector(0, 0)
-snake = [vector(10, 0)]
+a=round(rd.randint(-9,9)*10)
+b=round(rd.randint(-9,9)*10)
+c=round(rd.randint(-9,9)*10)
+d=round(rd.randint(-9,9)*10)
+print(a,b,c,d)
+
+food = vector(c, d)
+snake = [vector(a, b)]
 aim = vector(0, -10)
 
 def change(x, y):
